@@ -1,0 +1,108 @@
+:root {
+  --textColor: #1b2125;
+  --lightTextColor: #7a8b97;
+  --borderColor: #e4eaee;
+}
+
+body {
+  margin: 0;
+  color: var(--lightTextColor)  ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul.steps {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.steps li {
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--borderColor);
+  color: var(--lightTextColor);
+}
+ul.steps li.active {
+  color: #1b2125;
+  border-color: #1b2125;
+  font-weight: bold;
+}
+
+.right-bar {
+  background-color: #f8fafb;
+}
+h3, 
+.text-dark {
+  color: var(--textColor);
+}
+h3 {
+  font-weight: 300;
+}
+h3 .badge {
+  font-weight: 300;
+  transform: scale(0.8);
+}
+.right-bar h3 {
+  border-bottom: 1px solid var(--borderColor);
+  padding: 15px 0;
+}
+
+.form-label,
+.steps,
+.input-group .btn {
+  text-transform: uppercase;
+}
+
+.form-label {
+  color: var(--lightTextColor);
+}
+
+.form-control,
+.form-select {
+  border-radius: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #0077e2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.input-group .btn {
+  border: 1px solid #ced4da;
+  background-color: transparent;
+  font-weight: bold;
+  color: #53b8fb;
+}
+
+.total-amount {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.price {
+  font-weight: bold;
+}
+.price::before {
+  content: "€ ";
+}
+
+.voucher-line {
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 15px 0;
+  /* font-weight: bold; */
+}
+.cart-footer {
+  padding: 15px 0;
+  border-bottom: 2px solid var(--borderColor);
+  margin-bottom: 15px;
+}
